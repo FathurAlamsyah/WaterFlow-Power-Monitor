@@ -146,7 +146,7 @@ void sendData(){
     WiFiClient client;
     HTTPClient http;
 
-    String httpReqData = server + "/InsertDB.php?volt=" + String(volt) + "&curr=" + String(curr/1000) + 
+    String httpReqData = server + "/InsertDB.php?volt=" + String(volt) + "&curr=" + String(curr) + 
                         + "&water=" + String(flowRate);
 
     http.begin(httpReqData.c_str());
